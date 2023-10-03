@@ -1,3 +1,5 @@
+using BOKNoti_2Service.Webapi;
+
 namespace BokNoti_1WinForm
 {
     public partial class Form1 : Form
@@ -16,9 +18,13 @@ namespace BokNoti_1WinForm
             txtBoxLog.Text += appendlog;
         }
 
-        private void btnStopListen_Click(object sender, EventArgs e)
+        private async void btnStopListen_Click(object sender, EventArgs e)
         {
+            Task<string> rval = CMRApi.Listening();
 
+            string r = await rval;
+
+            txtBoxLog.Text +=  $"{r}   {Environment.NewLine}";
         }
     }
 }
