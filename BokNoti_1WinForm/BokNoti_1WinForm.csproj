@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BOKNoti_2Service\BOKNoti_2Service.csproj" />
+    <ProjectReference Include="..\BOKNoti_3Model\BOKNoti_3Model.csproj" />
   </ItemGroup>
 
 </Project>

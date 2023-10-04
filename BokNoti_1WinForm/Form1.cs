@@ -20,11 +20,14 @@ namespace BokNoti_1WinForm
 
         private async void btnStopListen_Click(object sender, EventArgs e)
         {
-            Task<string> rval = CMRApi.Listening();
+            ((Button)sender).Enabled = false;
+
+            Task<string> rval = new CMRApi().Listening();
 
             string r = await rval;
 
             txtBoxLog.Text +=  $"{r}   {Environment.NewLine}";
+            ((Button)sender).Enabled = true;
         }
     }
 }

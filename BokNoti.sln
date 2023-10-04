@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BokNoti_1WinForm", "BokNoti_1WinForm\BokNoti_1WinForm.csproj", "{F0726B7B-3DA6-472E-B47F-FC98937A2596}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BokNoti_1WinForm", "BokNoti_1WinForm\BokNoti_1WinForm.csproj", "{F0726B7B-3DA6-472E-B47F-FC98937A2596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOKNoti_2Service", "BOKNoti_2Service\BOKNoti_2Service.csproj", "{EF2A2EC1-E51F-4DFB-89E9-92A5BD20E488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOKNoti_2Service", "BOKNoti_2Service\BOKNoti_2Service.csproj", "{EF2A2EC1-E51F-4DFB-89E9-92A5BD20E488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOKNoti_3Model", "BOKNoti_3Model\BOKNoti_3Model.csproj", "{3CC4A412-3C18-42BE-8E9E-D6AD018CD4C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EF2A2EC1-E51F-4DFB-89E9-92A5BD20E488}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF2A2EC1-E51F-4DFB-89E9-92A5BD20E488}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF2A2EC1-E51F-4DFB-89E9-92A5BD20E488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC4A412-3C18-42BE-8E9E-D6AD018CD4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC4A412-3C18-42BE-8E9E-D6AD018CD4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC4A412-3C18-42BE-8E9E-D6AD018CD4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC4A412-3C18-42BE-8E9E-D6AD018CD4C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
