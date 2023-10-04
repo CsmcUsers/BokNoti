@@ -47,9 +47,9 @@ public class CMRApi
             return $"null{Environment.NewLine}";
         }
 
-        foreach (TreeMap item in alldata.Take(10))
+        foreach (TreeMap item in alldata.Take(100))
         {
-            rval += $"{item}  {Environment.NewLine}";
+            rval += $"{item}{Environment.NewLine}";
         }
 
         return rval;
@@ -67,7 +67,7 @@ public class CMRApi
 
     public async Task<string> PostAsync(string url, HttpContent content)
     {
-        await Task.Delay(1000);
+        await Task.Delay(500);
 
         HttpResponseMessage response = await _httpClient.PostAsync(url, content);
 
@@ -75,4 +75,11 @@ public class CMRApi
 
         return stringData;
     }
+
+    int AddTwoNumbers(int a, int b)
+    {
+        return a + b;
+    }
+
+    
 }

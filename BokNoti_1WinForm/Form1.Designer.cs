@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            btnListen = new Button();
             txtBoxLog = new TextBox();
+            btnListen = new Button();
             panel2 = new Panel();
             btnStopListen = new Button();
             panel1.SuspendLayout();
@@ -45,6 +45,15 @@
             panel1.Size = new Size(706, 447);
             panel1.TabIndex = 0;
             // 
+            // txtBoxLog
+            // 
+            txtBoxLog.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtBoxLog.Location = new Point(0, 3);
+            txtBoxLog.Multiline = true;
+            txtBoxLog.Name = "txtBoxLog";
+            txtBoxLog.Size = new Size(703, 441);
+            txtBoxLog.TabIndex = 0;
+            // 
             // btnListen
             // 
             btnListen.Location = new Point(3, 3);
@@ -54,15 +63,6 @@
             btnListen.Text = "啟用";
             btnListen.UseVisualStyleBackColor = true;
             btnListen.Click += btnListen_Click;
-            // 
-            // txtBoxLog
-            // 
-            txtBoxLog.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBoxLog.Location = new Point(0, 3);
-            txtBoxLog.Multiline = true;
-            txtBoxLog.Name = "txtBoxLog";
-            txtBoxLog.Size = new Size(703, 441);
-            txtBoxLog.TabIndex = 0;
             // 
             // panel2
             // 
@@ -87,7 +87,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(801, 449);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "Form1";

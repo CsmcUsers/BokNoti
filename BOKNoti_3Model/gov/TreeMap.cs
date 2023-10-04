@@ -24,6 +24,6 @@ public class TreeMap
 
     public override string ToString()
     {
-        return $" {Seq}.  {行政區}-{樹種}--{大約數量}";
+        return string.Format("{0,2}.{1,-4}{2,-9:C}{3,-4}", Seq, 行政區, 樹種, 大約數量) ;
     }
 }

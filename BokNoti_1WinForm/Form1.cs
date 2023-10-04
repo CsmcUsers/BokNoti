@@ -26,7 +26,7 @@ namespace BokNoti_1WinForm
 
             string r = await rval;
 
-            txtBoxLog.Text +=  $"{r}   {Environment.NewLine}";
+            txtBoxLog.Text = r + txtBoxLog.Text;
             ((Button)sender).Enabled = true;
         }
     }
